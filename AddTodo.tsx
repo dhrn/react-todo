@@ -6,6 +6,7 @@ export default function ({ onAdd }) {
   const onKeyPress = (event) => {
     if (event.key == 'Enter' && todo.current.value.length > 2) {
       onAdd(todo.current.value);
+      todo.current.value = '';
     }
   };
 
